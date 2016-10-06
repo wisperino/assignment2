@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Kai HW 5 First page
+    </title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+  </head>
+  <body>
+    <h1 style="color:blue;margin-left:30px;">
+      Welcome to the new cool resturant job applicaiton form.
+    </h1><!-- having the name of the form be the action attribute makes it refresh the page so its 1 page, id is for the external button. -->
+    <form action="homework5.php" id="myFOURMAHH" method="post" name="myFOURMAHH">
+      <!-- A bunch of text inputs to begin -->
+      Personal infornmation:<br>
+      First name:<br>
+      <input name="firstname" required="" type="text"><br>
+      Last name name:<br>
+      <input name="lastname" required="" type="text" value=""><br>
+      Middle initials, 2 characters exc: ("kc"):<br>
+      <input maxlength="2" name="midinitials" required="" type="text"><br>
+      Home address:<br>
+      <input name="homeaddress" type="text" value=""><br>
+      Permanent mailing address:<br>
+      <input name="permaddress" required="" type="text" value=""><br>
+      <!-- This is a phone number input with a required format-->
+       Phone numbger, format(xxx-xxx-xxxx):<br>
+      <input name="phone" pattern="^\d{3}-\d{3}-\d{4}$" required="" type="text"><br>
+      <!-- This is an email input -->
+       Email:<br>
+      <input name="email" required="" type="email"><br>
+      Social Security Number (not required):<br>
+      <input name="socsecnum" type="text" value=""><br>
+      <!-- Here is a radio button. -->
+       Are you a U.S Citizen?:<br>
+      <input name="citz" required="" type="radio" value="yes"> yes<br>
+      <input name="citz" type="radio" value="no"> no<br>
+      Were you refered to this position? :<br>
+      <!-- Here is a checkbox-->
+       <input name="yesRef" type="checkbox" value="yes"> Yes <input name="noRef" type="checkbox" value="no"> No<br>
+      If you answered "yes", by whom?: <input name="referanceEmployee" type="text" value=""><br>
+      <fieldset>
+        <!--I used fieldsets for past work experiance and the educaiton to group things nicely-->
+        <legend>Past work experiance:</legend> Name of company:<br>
+        <input name="nameOfComp" type="text" value=""><br>
+        Title:<br>
+        <input name="Title" type="text" value=""><br>
+        Supervisor name(s):<br>
+        <input name="supervisorName" type="text" value=""><br>
+        Were you fired?: <input name="citz" type="radio" value="yes"> yes <input name="citz" type="radio" value="no"> no<br>
+        Is it ok for us to contact your previous supervisor?:<br>
+        <input name="contact" type="radio" value="yes"> yes <input name="contact" type="radio" value="no"> no<br>
+      </fieldset><br>
+      Educaiton questoins:<br>
+      <br>
+      <fieldset>
+        <legend>High school education:</legend> School name: <input name="highschoolname" type="text"> Location: <input name="highschoolLocation" type="text"> Graduate?: <input name="grad" type="radio" value="yes"> yes <input name="grad" type="radio" value="no"> no<br>
+      </fieldset><br>
+      Work related questions:<br>
+      <br>
+      <!--Below is the dropdown menu option.-->
+       Position applying for: <select name="cars">
+        <option value="Front Host/Hostess">
+          host
+        </option>
+        <option value="Server">
+          server
+        </option>
+        <option value="Food Runner/busser">
+          runner
+        </option>
+        <option value="Bartender">
+          bar
+        </option>
+        <option value="Cook">
+          cook
+        </option>
+        <option value="Dishwasher">
+          dishwasher
+        </option>
+      </select><br>
+      Check the days you are available to work:<br>
+      <input name="workMonday" type="checkbox" value="monday"> Mondays 
+	  <input name="workTuesday" type="checkbox" value="tuesday"> Tuesdays 
+	  <input name="workWednesday" type="checkbox" value="wednesday"> Wednesdays 
+	  <input name="workThursday" type="checkbox" value="thursday"> Thursdays 
+	  <input name="workFriday" type="checkbox" value="friday"> Fridays 
+	  <input name="workSaturday" type="checkbox" value="saturday"> Saturdays 
+	  <input name="workSunday" type="checkbox" value="sunday"> Sundays <br>
+      Employment desired: <input name="fullTime" type="checkbox" value="full"> Full time 
+	  <input name="PartTime" type="checkbox" value="part"> Part time 
+	  <input name="Temporary" type="checkbox" value="temp"> Temporary <br>
+      <br>
+    </form>
+  </body>
+</html>

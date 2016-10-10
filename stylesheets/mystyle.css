@@ -1,0 +1,52 @@
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		body {
+		  width:50%;
+		  margin: 0 auto;
+		}
+		h1{
+			color:blue;
+			text-align:center;
+		
+		div.button
+		{
+			background-color: #ff5c11;
+			border: none;
+			color: #0007ef;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: center;
+			cursor: pointer;
+		}
+		input[type=text] 
+		{	
+			color: #001fef;
+			width: 25%;
+			padding: 12px 20px;
+			margin: center;
+			box-sizing: border-box;
+		}
+		select
+		{
+			width: 20%;
+			border: none;
+			background-color: #ef00ab;
+		}		
+		input[type=email] 
+		{
+			color: #4c9b1bl;
+			width: 25%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+		input[type=button]
+		{
+			background-color: #ff5c11;
+			border: none;
+			color: #0007ef;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
